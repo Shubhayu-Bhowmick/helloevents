@@ -66,15 +66,15 @@ export async function POST(req: Request) {
       photo: image_url,
     }
 
-    const newUser = await createUser(user);
-
-    if(newUser) {
-      await clerkClient.users.updateUserMetadata(id, {
-        publicMetadata: {
-          userId: newUser._id
-        }
-      })
-    }
+    // const newUser = await createUser(user);
+    console.log(user);
+    // if(newUser) {
+    //   await clerkClient.users.updateUserMetadata(id, {
+    //     publicMetadata: {
+    //       userId: newUser._id
+    //     }
+    //   })
+    // }
 
     return NextResponse.json({ message: 'OK', user: newUser })
   }
