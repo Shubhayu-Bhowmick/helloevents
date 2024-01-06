@@ -16,6 +16,7 @@
     "@uploadthing/react": "^6.0.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "localtunnel": "^2.0.2",
     "lucide-react": "^0.301.0",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.3",
