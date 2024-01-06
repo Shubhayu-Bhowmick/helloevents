@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "local": "concurrently -n nextjs,proxy -c cyan,magenta \"npm run dev\" \"npm run lt\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lt": "lt --port 3000 --subdomain hello-events-shubh"
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.1",
