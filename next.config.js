@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  poweredByHeader: false,
+  images: {
+    domains: ['utfs.io'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'utfs.io',
+        port: ''
+      }
+    ]
+  }
 }
 
 module.exports = nextConfig
